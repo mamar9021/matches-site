@@ -1,0 +1,1 @@
+document.getElementById('matches').innerText = 'سيتم عرض جدول المباريات هنا قريبًا.';
