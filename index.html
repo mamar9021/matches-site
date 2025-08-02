@@ -1,14 +1,42 @@
+
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>مباريات اليوم</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مباريات اليوم</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>مرحبا بك في موقع مباريات اليوم</h1>
-  <div id="matches"></div>
-  <script src="main.js"></script>
+    <div class="container">
+        <h1>مرحباً بك في موقع مباريات اليوم</h1>
+        <div class="tabs">
+            <button onclick="showTab('yesterday')">أمس</button>
+            <button onclick="showTab('today')">اليوم</button>
+            <button onclick="showTab('tomorrow')">غداً</button>
+        </div>
+        <div id="yesterday" class="tab">
+            <h2>مباريات أمس</h2>
+            <ul>
+                <li>ريال مدريد 2 - 1 برشلونة</li>
+                <li>مانشستر سيتي 1 - 1 تشيلسي</li>
+            </ul>
+        </div>
+        <div id="today" class="tab active">
+            <h2>مباريات اليوم</h2>
+            <ul>
+                <li>الاتحاد vs فولهام - 21:00</li>
+                <li>النصر vs الأهلي - 22:30</li>
+            </ul>
+        </div>
+        <div id="tomorrow" class="tab">
+            <h2>مباريات الغد</h2>
+            <ul>
+                <li>ليفربول vs آرسنال - 20:00</li>
+                <li>بايرن ميونيخ vs باريس سان جيرمان - 22:00</li>
+            </ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
